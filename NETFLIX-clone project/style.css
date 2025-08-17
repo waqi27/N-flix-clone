@@ -1,0 +1,250 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+.main {
+  height: 90vh;
+  position: relative;
+  background: url("assets/images/bg.jpg") center center/cover no-repeat;
+}
+
+.overlay {
+  height: 90vh;
+  width: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.65);
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+nav {
+  max-width: 75vw;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  z-index: 2;
+  position: relative;
+}
+
+nav img {
+  width: 130px;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.language {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.btn {
+  padding: 8px 20px;
+  background-color: rgba(229, 9, 20, 1);
+  color: white;
+  border: none;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.hero {
+  position: relative;
+  z-index: 2;
+  height: calc(90vh - 100px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.hero h2 {
+  font-size: 1.5rem;
+  margin-top: 20px;
+  font-weight: 400;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin: 20px 0;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.hero-buttons input {
+  padding: 15px;
+  width: 300px;
+  font-size: 1rem;
+}
+
+.separation {
+  height: 8px;
+  background-color: #232323;
+}
+
+.first {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 5%;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.first>div {
+  flex: 1;
+  min-width: 300px;
+}
+
+.first h1 {
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
+.first p {
+  font-size: 1.25rem;
+  margin-top: 20px;
+}
+
+.secImg {
+  position: relative;
+}
+
+.secImg img {
+  width: 100%;
+  z-index: 2;
+  position: relative;
+}
+
+.secImg video {
+  position: absolute;
+  top: 20%;
+  left: 13%;
+  width: 74%;
+  z-index: 1;
+}
+
+.faq {
+  padding: 50px 5%;
+  text-align: center;
+}
+
+.faq h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.faqbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2d2d2d;
+  padding: 1.5rem;
+  color: white;
+  font-size: 1.2rem;
+  margin: 10px auto;
+  max-width: 900px;
+  cursor: pointer;
+}
+
+.faqbox svg {
+  stroke: white;
+ 
+  transition: transform 0.3s ease;
+}
+
+.faqbox:hover svg {
+  transform: rotate(45deg);
+}
+
+footer {
+  padding: 50px 5%;
+  font-size: 0.9rem;
+  background-color: black;
+}
+
+footer .questions {
+  margin-bottom: 30px;
+}
+
+footer .footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-item a {
+  color: #999;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero h2 {
+    font-size: 1.2rem;
+  }
+
+  .hero-buttons input {
+    width: 90%;
+  }
+
+  .first {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .secImg video {
+    top: 10%;
+    left: 10%;
+    width: 80%;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 10px;
+    height: auto;
+  }
+
+  .nav-buttons {
+    flex-direction: column;
+  }
+}
